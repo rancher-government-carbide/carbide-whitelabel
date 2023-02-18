@@ -5,10 +5,9 @@ COPY ./carbide-assets /tmp/assets
 # spec:
 #   initContainers:
 #     - name: copy
-#       image: bgulla/copypotomus
+#       image: ssf/carbide-whitelabel
 #       imagePullPolicy: Always
 #       command:  ["/bin/sh", "-c", "cp -rf /tmp/assets/* /rancher-images/"]
-#       # ["/bin/sh", "-c", "cp /config/cassandra.yaml /config/cassandra/"]
 #       volumeMounts:
 #       - name: work-dir
 #         mountPath: /rancher-images/
